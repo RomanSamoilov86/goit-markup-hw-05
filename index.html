@@ -52,7 +52,7 @@
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button class="hero-btn">Заказать услугу</button>
+        <button class="hero-btn" data-modal-open>Заказать услугу</button>
       </section>
 
       <!-- пункты про нас -->
@@ -85,12 +85,15 @@
           <ul class="list-img">
             <li class="item-img">
               <img src="images/img1.png" alt="програмирование за рабочим столом" width="370" />
+              <p class="desc-img">Десктопные приложения</p>
             </li>
             <li class="item-img">
               <img src="images/img2.png" alt="програмирование мобильного изображения" width="370" />
+              <p class="desc-img">Мобильные приложения</p>
             </li>
             <li class="item-img">
               <img src="images/img3.png" alt="планшет с изображением" width="370" />
+              <p class="desc-img">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -351,40 +354,19 @@
               </a>
             </li>
           </ul>
-          <!-- <div>
-            <ul class="card-list">
-              <li class="card-item">
-                <a href="" class="item-card">
-                  <svg class="item-icon">
-                    <use href="./svg/sprait.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="card-item">
-                <a href="" class="item-card">
-                  <svg class="item-icon">
-                    <use href="./svg/sprait.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="card-item">
-                <a href="" class="item-card">
-                  <svg class="item-icon">
-                    <use href="./svg/sprait.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="card-item">
-                <a href="" class="item-card">
-                  <svg class="item-icon">
-                    <use href="./svg/sprait.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div> -->
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          X
+          <!-- <svg class="close-dtn-svg" width="11" height="11">
+            <use href="./svg/close.svg"></use>
+          </svg> -->
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
